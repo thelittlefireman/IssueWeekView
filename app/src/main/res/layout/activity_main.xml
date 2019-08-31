@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefreshEdt"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.alamkanak.weekview.WeekView
+            android:id="@+id/weekView"
+            android:layout_alignParentBottom="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:columnGap="5dp"
+            app:eventCornerRadius="5dp"
+            app:eventMarginVertical="1dp"
+            app:eventTextColor="@color/colorAccent"
+            app:eventTextSize="12sp"
+            app:headerRowBackgroundColor="#ffefefef"
+            app:headerRowPadding="5dp"
+            app:minHourHeight="10dp"
+            app:maxHour="20"
+            app:minHour="6"
+            app:numberOfVisibleDays="5"
+            app:overlappingEventGap="2dp"
+            app:showNowLine="true"
+            app:timeColumnPadding="5dp"
+            app:timeColumnTextColor="@color/colorPrimary"
+            app:xScrollingSpeed="1" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
